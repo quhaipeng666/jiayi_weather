@@ -1,0 +1,5 @@
+dependencies:
+  espressif/esp_lvgl_port: ^2.9.0
+  jbrilha/esp_lcd_st7789: ^1.0.2
+  espressif/cjson: "^1.7.19"
+  lvgl/lvgl: "9.5.0"

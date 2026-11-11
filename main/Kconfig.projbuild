@@ -1,0 +1,34 @@
+menu "Weather station"
+
+config WEATHER_WIFI_SSID
+    string "Wi-Fi SSID"
+    default ""
+    help
+        The 2.4 GHz Wi-Fi network used for IP-based location and weather.
+
+config WEATHER_WIFI_PASSWORD
+    string "Wi-Fi password"
+    default ""
+    help
+        Password for the Wi-Fi network above.
+
+config WEATHER_LOCATION_NAME
+    string "Location name override (empty = auto via IP)"
+    default ""
+    help
+        Display name shown on screen, e.g. 西安市雁塔区. IP geolocation can only
+        resolve to city level, so set this to your actual district for accuracy.
+
+config WEATHER_LAT
+    string "Latitude override (empty = auto via IP)"
+    default ""
+    help
+        Latitude used for the weather query, e.g. 34.2225. Pair with longitude.
+
+config WEATHER_LON
+    string "Longitude override (empty = auto via IP)"
+    default ""
+    help
+        Longitude used for the weather query, e.g. 108.9480. Pair with latitude.
+
+endmenu

@@ -1,0 +1,21 @@
+# Copyright (c) 2026 加一公司. All rights reserved.
+# 文件: sdkconfig.defaults  作者: 屈海鹏  时间: 2026-11-11
+# 描述: 工程默认配置（Flash、证书包、中文字体依赖、分区表）。
+#
+# 注意：Wi-Fi 账号密码与定位信息属于个人配置，请通过 `idf.py menuconfig`
+#      在 "Weather station" 菜单中填写（保存在本地 sdkconfig，不入库）。
+
+CONFIG_ESPTOOLPY_FLASHSIZE_8MB=y
+CONFIG_MBEDTLS_CERTIFICATE_BUNDLE=y
+CONFIG_MBEDTLS_CERTIFICATE_BUNDLE_DEFAULT_FULL=y
+CONFIG_LV_FONT_MONTSERRAT_24=y
+CONFIG_LV_FONT_MONTSERRAT_32=y
+CONFIG_PARTITION_TABLE_CUSTOM=y
+CONFIG_PARTITION_TABLE_CUSTOM_FILENAME="partitions.csv"
+
+# 使用说明占位（保持为空，由 menuconfig 填写）
+CONFIG_WEATHER_WIFI_SSID=""
+CONFIG_WEATHER_WIFI_PASSWORD=""
+CONFIG_WEATHER_LOCATION_NAME=""
+CONFIG_WEATHER_LAT=""
+CONFIG_WEATHER_LON=""
